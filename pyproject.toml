@@ -1,0 +1,61 @@
+[project]
+name = "drf-standardized-responses"
+version = "0.1.3"
+description = "A Django REST Framework utility for standardized API responses, pagination, and exception handling."
+readme = "README.md"
+requires-python = ">=3.8"
+license = { text = "BSD-3-Clause" }
+
+authors = [
+  { name="Yousef M. Y. Al Sabbah", email="yousef.sabbah@example.com" }
+]
+
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Environment :: Web Environment",
+    "Framework :: Django",
+    "Framework :: Django :: 3.2",
+    "Framework :: Django :: 4.0",
+    "Framework :: Django :: 4.1",
+    "Framework :: Django :: 4.2",
+    "Framework :: Django :: 5.0",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: BSD License",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
+    "Topic :: Internet :: WWW/HTTP",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+]
+
+dependencies = [
+  "djangorestframework>=3.13",
+  "django>=3.2"
+]
+
+[project.urls]
+Homepage = "https://github.com/Yosef-AlSabbah/drf-standardized-responses"
+Repository = "https://github.com/Yosef-AlSabbah/drf-standardized-responses"
+Issues = "https://github.com/Yosef-AlSabbah/drf-standardized-responses/issues"
+Changelog = "https://github.com/Yosef-AlSabbah/drf-standardized-responses/blob/main/CHANGELOG.md"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/drf_standardized_responses"]
+
+[tool.hatch.build.targets.sdist]
+include = [
+    "src/drf_standardized_responses",
+    "LICENSE",
+    "README.md",
+    "CHANGELOG.md",
+]
