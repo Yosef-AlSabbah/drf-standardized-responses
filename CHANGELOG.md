@@ -2,6 +2,11 @@
 
 All notable changes to this project will be documented in this file.
 
+## [0.1.4] - 2025-06-24
+### Changed
+- Updated author information with correct email contact
+- Improved GitHub Actions workflow for automated publishing to PyPI and GitHub Packages
+
 ## [0.1.3] - 2025-06-24
 ### Added
 - Comprehensive test suite with unit and integration tests

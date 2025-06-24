@@ -1,35 +1,44 @@
-name: Publish Package to GitHub Packages
+name: Publish Python Package
 
 on:
   release:
     types: [created]
 
 jobs:
-  build-and-publish:
+  deploy:
     runs-on: ubuntu-latest
     permissions:
       contents: read
-      packages: write
+      id-token: write  # IMPORTANT: this permission is mandatory for trusted publishing to PyPI
 
     steps:
-    - uses: actions/checkout@v3
+    - uses: actions/checkout@v4
 
     - name: Set up Python
-      uses: actions/setup-python@v4
+      uses: actions/setup-python@v5
       with:
-        python-version: '3.x'
+        python-version: '3.11'
 
-    - name: Install dependencies
+    - name: Install build dependencies
       run: |
         python -m pip install --upgrade pip
-        pip install build twine
+        pip install build wheel hatch
 
     - name: Build package
-      run: python -m build
+      run: |
+        python -m build
 
-    - name: Publish package to GitHub Packages
+    - name: Publish to PyPI
       uses: pypa/gh-action-pypi-publish@release/v1
       with:
-        password: ${{ secrets.PYPI_TOKEN }}
-        repository_url: https://pypi.pkg.github.com/Yosef-AlSabbah
+        verbose: true
+        print-hash: true
+
+    - name: Publish to GitHub Packages
+      uses: pypa/gh-action-pypi-publish@release/v1
+      with:
+        repository-url: https://github.com/Yosef-AlSabbah/drf-standardized-responses/packages
+        user: __token__
+        password: ${{ secrets.GITHUB_TOKEN }}
+        packages-dir: dist/
         skip-existing: true

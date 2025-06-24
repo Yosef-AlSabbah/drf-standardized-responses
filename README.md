@@ -1,7 +1,7 @@
 # drf-standardized-responses
 
 [![PyPI](https://img.shields.io/pypi/v/drf-standardized-responses.svg)](https://pypi.org/project/drf-standardized-responses/)
-[![Downloads](https://static.pepy.tech/badge/drf-standardized-responses)](https://pepy.tech/project/drf-standardized-responses)
+[![PyPI Downloads](https://static.pepy.tech/badge/drf-standardized-responses)](https://pepy.tech/projects/drf-standardized-responses)
 [![Python Version](https://img.shields.io/pypi/pyversions/drf-standardized-responses.svg)](https://pypi.org/project/drf-standardized-responses/)
 [![License](https://img.shields.io/badge/license-BSD-blue.svg)](LICENSE)
 
@@ -153,12 +153,19 @@ pytest
 
 ---
 
-## License
+## Author
 
-BSD-3-Clause
+- Yousef M. Y. Al Sabbah <itzyousefalsabbah@gmail.com>
+- GitHub: [Yosef-AlSabbah](https://github.com/Yosef-AlSabbah)
 
 ---
 
-## Author
+## Contributing
 
-- [Yousef M. Y. Al Sabbah](https://github.com/Yosef-AlSabbah)
+Contributions are welcome! Please check out the [contributing guidelines](CONTRIBUTING.md) for more details on how to contribute to this project.
+
+---
+
+## License
+
+BSD-3-Clause
