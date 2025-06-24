@@ -1,7 +1,7 @@
 # drf-standardized-responses
 
 [![PyPI](https://img.shields.io/pypi/v/drf-standardized-responses.svg)](https://pypi.org/project/drf-standardized-responses/)
-[![Downloads](https://static.pepy.tech/personalized-badge/drf-standardized-responses?period=total&units=international_system&left_color=grey&right_color=blue&left_text=Downloads)](https://pepy.tech/project/drf-standardized-responses)
+[![Downloads](https://static.pepy.tech/badge/drf-standardized-responses)](https://pepy.tech/project/drf-standardized-responses)
 [![Python Version](https://img.shields.io/pypi/pyversions/drf-standardized-responses.svg)](https://pypi.org/project/drf-standardized-responses/)
 [![License](https://img.shields.io/badge/license-BSD-blue.svg)](LICENSE)
 
