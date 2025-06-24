@@ -1,6 +1,7 @@
 # drf-standardized-responses
 
 [![PyPI](https://img.shields.io/pypi/v/drf-standardized-responses.svg)](https://pypi.org/project/drf-standardized-responses/)
+[![CI/CD](https://github.com/Yosef-AlSabbah/drf-standardized-responses/actions/workflows/ci-cd.yml/badge.svg)](https://github.com/Yosef-AlSabbah/drf-standardized-responses/actions/workflows/ci-cd.yml)
 [![PyPI Downloads](https://static.pepy.tech/badge/drf-standardized-responses)](https://pepy.tech/projects/drf-standardized-responses)
 [![Python Version](https://img.shields.io/pypi/pyversions/drf-standardized-responses.svg)](https://pypi.org/project/drf-standardized-responses/)
 [![License](https://img.shields.io/badge/license-BSD-blue.svg)](LICENSE)
