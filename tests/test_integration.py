@@ -3,7 +3,6 @@ Integration tests for drf-standardized-responses package.
 
 These tests ensure all components work together correctly when used in a Django REST Framework app.
 """
-import json
 import pytest
 from django.urls import reverse
 from rest_framework.test import APIClient

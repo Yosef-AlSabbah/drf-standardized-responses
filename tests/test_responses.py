@@ -1,12 +1,10 @@
 """
 Tests for the StandardResponse class.
 
-This module tests the StandardResponse class and its functionality for generating
+This module tests the functionality of the StandardResponse class in providing
 standardized API responses.
 """
-import pytest
 from rest_framework import status
-from rest_framework.test import APIRequestFactory
 
 from drf_standardized_responses.responses import StandardResponse
 

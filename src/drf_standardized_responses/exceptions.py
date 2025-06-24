@@ -1,5 +1,5 @@
 import logging
-from typing import Dict, Any, Optional
+from typing import Dict, Any
 
 from django.http import Http404
 from rest_framework.views import exception_handler

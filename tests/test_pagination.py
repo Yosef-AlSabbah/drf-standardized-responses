@@ -1,14 +1,14 @@
 """
 Tests for the StandardPagination class.
 
-This module tests the StandardPagination class functionality for providing
+This module tests the functionality of the StandardPagination class in providing
 standardized paginated responses.
 """
-from unittest.mock import MagicMock, patch
+from unittest.mock import MagicMock
 
-import pytest
 from django.test import RequestFactory
 from rest_framework.request import Request
+from rest_framework.response import Response
 
 from drf_standardized_responses.pagination import StandardPagination
 

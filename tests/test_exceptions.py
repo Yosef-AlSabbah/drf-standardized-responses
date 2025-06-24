@@ -1,10 +1,9 @@
 """
 Tests for the standardized exception handler.
 
-This module tests the standardized_exception_handler functionality for
+This module tests the exception handler's functionality in
 consistently formatting API error responses.
 """
-import pytest
 from django.http import Http404
 from rest_framework import status
 from rest_framework.exceptions import APIException, ValidationError, NotFound

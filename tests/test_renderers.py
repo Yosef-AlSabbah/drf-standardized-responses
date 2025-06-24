@@ -1,16 +1,13 @@
 """
 Tests for the StandardResponseRenderer class.
 
-This module tests the StandardResponseRenderer class functionality for automatically
-wrapping API responses in the standardized format.
+This module tests the renderer's functionality in consistently
+formatting API responses and preventing double-wrapping of responses.
 """
 import json
-from unittest.mock import MagicMock
 
-import pytest
 from rest_framework import status
 from rest_framework.response import Response
-from rest_framework.test import APIRequestFactory
 
 from drf_standardized_responses.renderers import StandardResponseRenderer
 
